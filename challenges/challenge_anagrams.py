@@ -17,7 +17,6 @@ def sort(string, start, end):
     return string
 
 
-
 def is_anagram(first_string, second_string):
     if first_string == "" or second_string == "":
         return (first_string, second_string, False)
@@ -25,4 +24,4 @@ def is_anagram(first_string, second_string):
     item2 = list(second_string.lower())
     item1_sort = sort(item1, 0, len(item1) - 1)
     item2_sort = sort(item2, 0, len(item2) - 1)
-    return (''.join(item1_sort), ''.join(item2_sort), item1_sort == item2_sort)   
+    return (''.join(item1_sort), ''.join(item2_sort), item1_sort == item2_sort)

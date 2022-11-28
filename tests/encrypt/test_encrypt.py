@@ -9,6 +9,6 @@ def test_encrypt_message():
 
     with pytest.raises(TypeError):
         encrypt_message("AABBCC", "numero")
-    
+
     with pytest.raises(TypeError):
         encrypt_message(123456, 1)
